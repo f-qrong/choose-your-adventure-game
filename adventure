@@ -1,0 +1,363 @@
+# Date: October 18, 2024.
+# Author: Qianrong Feng
+# Description: choose your adventure, choose a flight and enjoy your trip.
+
+play_again = "yes"
+
+while True:
+    print("Here is a travel adventure. You have a chance that you can travel to New York, Beijing, or Sydney.")
+    player_destination = input("""Where do you want to go? From Toronto to New York (1), Beijing (2) or Sydney (3)
+    type 1, 2, or 3: """)
+
+    # if the player choose the flight of Toronto --> New York
+    if player_destination == "1":
+        print("You have arrived safely in New York, there are two places you can choose to go (Statue of Liberty or "
+              "the Metropolitan Museum of Art.")
+        print("(1) Statue of Liberty, a towering symbol of freedom and democracy. It was gifted to the United States "
+              "by France in 1886 to commemorate the nation's independence and the friendship. It stands in New York "
+              "Harbor, "
+              "representing hope and opportunity for millions of immigrants.")
+        print("(2) The Metropolitan Museum of Art, commonly known as The Met, is one of the largest and most "
+              "prestigious art museums in the world, housing over two million works spanning 5000 years of art, "
+              "from ancient civilizations to modern masterpieces.")
+        player_first_destination = input("""Where do you want to go first? 
+        Statue of Liberty (1) or the Metropolitan Museum of Art (2). 
+        type 1 or 2: """)
+
+        if player_first_destination == "1":
+            # Statue of Liberty
+            print("Your visited the iconic Statue of Liberty and immerse in the breathtaking views of New York City.")
+            print("Next, you have a choice to go to Central Park or Times Square.")
+            print("(1) Central Park is a vast urban oasis spanning 843 acres, offering picturesque landscapes, lakes "
+                  "and various recreational activities.")
+            print("(2) Times Square is a vibrant hub in the heart of New York City, famous for it dazzling neon light, "
+                  "massive billboards, and lively atmosphere.")
+            player_second_destination = input("""Where do you want to go next?
+            Central Park (1) or Times Square (2)
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Central Park
+                print("You really enjoy the beautiful scene. Next to the park you see street performer.")
+                print("Now, you have a choice to stay and enjoy the show or continue on to Top of The Rock.")
+                print("Top of The Rock is a renowned observation deck that offers breathtaking panoramic views of the"
+                      " city's skyline, including iconic landmarks like the Empire State Building and Central Park.")
+                player_third_destination = input("""Where do you want to go?
+                enjoy the show (1) or the Top of The Rock (2)
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # enjoy the show
+                    print("You see street performances and feel the warmth and unique atmosphere of this city!")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game! Game over.")
+
+                elif player_third_destination == "2":
+                    # Top of The Rock
+                    print("You experience the amazing views from Top of the Rock, where you capture stunning "
+                          "photographs.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+
+            elif player_second_destination == "2":
+                # Times Square
+                print("You are struck by the electric energy and enjoy the atmosphere. In the meantime, you take a "
+                      "lot of pictures with your camera.")
+                print("Next, you have a choice to go to Brooklyn Bridge or the American Museum of Natural History.")
+                print("(1) Brooklyn Bridge connects Manhattan and Brooklyn offering stunning views of New York City "
+                      "skyline and East River.")
+                print("(2) The American Museum of National History s one of the world's most renowned institutions, "
+                      "featuring vast exhibits, offering an immersive journey through science and nature.")
+                player_third_destination = input("""Where do you want to go?
+                Brooklyn Bridge (1) or The American Museum of Natural History (2)
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # Brooklyn Bridge
+                    print("You bike across Brooklyn Bridge, which become one of the most unforgettable moments in your "
+                          "life.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                elif player_third_destination == "2":
+                    # The Amercian Museum of Natural History
+                    print("Your explore the mysteries of the universe, discover ancient cultures, and the diversity "
+                          "of life on Earth")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+
+            else:
+                print("\nInvalid choice. Game over.")
+
+        elif player_first_destination == "2":
+            # The Metropolitan Museum of Art
+            print("Every gallery transports you through time and culture, leaving you feeling enriched.")
+            print("Next, you have a choice to go to Times Square or One world observation.")
+            print("(1) Times Square is a vibrant hub in the heart of New York City, famous for it dazzling neon light, "
+                  "massive billboards, and lively atmosphere.")
+            print("(2) One World observation,located at the top of One World Trade Center, offers a stunning 260 "
+                  "degree view of New York City from the tallest building.")
+            player_second_destination = input("""Where do you want to go next?
+            Times Square (1) or One world observation (2)
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Times Square
+                print("You are struck by the electric energy and enjoy the atmosphere. In the meantime, you take a "
+                      "lot of pictures with your camera.")
+                print("Next, you have a choice to go Empire State Building or Statue of Liberty.")
+                print("(1) The Empire State Building, one of New York City's most famous landmarks, offering visitors"
+                      "breathtaking views of the city's skyline.")
+                print("(2) Statue of Liberty, a towering symbol of freedom and democracy, It was gifted to the "
+                      "United States by France in 1886 to commemorate the nation's independence and the friendship. "
+                      "It stands in New York Harbor, representing hope and opportunity for millions of immigrants.")
+                player_third_destination = input("""Where do you want to go?
+                The Empire State Building (1) or Statue of Liberty (2)
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # The Empire State Building
+                    print("You enjoy panoramic the wide views of New York and the amazing feeling it give you.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                elif player_third_destination == "2":
+                    # Statue of Liberty
+                    print("Your visited the iconic Statue of Liberty and immerse in the breathtaking views of New York "
+                          "City.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+
+            elif player_second_destination == "2":
+                # One World Observation
+                print("You ascend to the top of One World Observatory and experience unparalleled views of New York "
+                      "City.")
+                print("Next, you have a choice to go to Brooklyn Bridge or stay in One World Trade Center.")
+                print("(1) Brooklyn Bridge connects Manhattan and Brooklyn offering stunning views of New York City "
+                      "skyline and East River.")
+                print("(2) One World Trade Center is the tallest building in the Western Hemisphere.")
+                player_third_destination = input("""Where do you want to go?
+                Brooklyn Bridge (1) or One World Trade Center (2)
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # Brooklyn Bridge
+                    print("You bike across Brooklyn Bridge, which become one of the most unforgettable moments in your "
+                          "life.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                elif player_third_destination == "2":
+                    # One World Trade Center
+                    print("You enjoy the moments when you are alone, taking in the scenery.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game!")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+            else:
+                print("\nInvalid choice. Game over.")
+        else:
+            print("\nInvalid choice. Game over.")
+
+    # if the player choose the flight of Toronto --> Beijing
+    elif player_destination == "2":
+        print("You have arrived safely in Beijing, there are two places you can choose to go (Great Wall of China or "
+              "Forbidden City).")
+        print("(1) The Great Wall of China, a UNESCO World Heritage site and one of the most impressive architectural "
+              "feats in history, symbolizing the country's ancient strength and cultural heritage.")
+        print("(2) The Forbidden City, located in the heart of Beijing, is a sprawling imperial palace complex that "
+              "served as the home of Chinese emperors for nearly 500 years, and is a UNESCO World heritage site "
+              "showcasing traditional Chinese architecture and cultural treasures.")
+        player_first_destination = input("""Where do you want to go first? 
+        Great Wall of China (1) or Forbidden City (2). 
+        type 1 or 2: """)
+
+        if player_first_destination == "1":
+            # The Great Wall of China
+            print("You walk along the Great Wall of China, the sense of standing on a timeless piece of history give "
+                  "you an unforgettable experience.")
+            print("Next, you have a choice to go to Summer Palace or the Temple of Heaven.")
+            print("(1) Summer Palace is a stunning imperial garden and palace complex that retreat for China's "
+                  "emperors, renowned for its traditional architecture and beautiful landscapes and lakes.")
+            print("(2) The Temple of Heaven is a magnificent complex of religious building where Chinese emperors once "
+                  "performed sacred rituals.")
+            player_second_destination = input("""Where do you want to go next?
+            Summer Palace (1) or Temple of Heaven (2). 
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Summer Palace
+                print("You stroll though the Summer Palace, glimpse into the opulent lifestyle of China's imperial "
+                      "rulers.")
+                print("You have been to Great Wall of China and Summer Palace, you walked a long way and felt a little "
+                      "tired. You went to eat Peking duck and then went back to the hotel to rest.")
+                print("Thank you for playing the game. Game over.")
+
+            elif player_second_destination == "2":
+                # Temple of Heaven
+                print("You visit the Temple of Heaven and experience its grand, serene beauty, which creating a "
+                      "peaceful and awe-inspiring atmosphere.")
+                print("You have been to Great Wall of China and the Temple of Heaven, you walked a long way and felt a "
+                      "little tired. You went to eat Noodle with Soy Bean Paste, a traditional noodle in Beijing, and "
+                      "then went back to the hotel to rest.")
+                print("Thank you for playing the game. Game over.")
+
+            else:
+                print("\nInvalid choice. Game over.")
+
+        elif player_first_destination == "2":
+            # Forbidden City
+            print("You step into the Forbidden City, where you explore centuries-old relics, immersing yourself in the"
+                  " rich history.")
+            print("Next, you have a choice to go to Tiananmen Square or Beihai Park.")
+            print("(1) Tiananmen Square is besides the Forbidden City, is one of the largest public squares in the "
+                  "world and a symbol of modern China.")
+            print("(2) Beihai Park is one of the oldest and most well-preserved imperial gardens in Beijing, offers a "
+                  "blend of natural beauty and traditional Chinese architecture.")
+            player_second_destination = input("""Where do you want to go next?
+            Tiananmen Square (1) or Beihai Park (2). 
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Tiananmen Square
+                print("You explore the vast and historic Tiananmen Square, where become a must_visit destination for "
+                      "anyone wanting to experience the heart of the nation.")
+                print("Now, you have a choice to go to Wangfujing Avenue or Beijing Olympic Park.")
+                print("(1) Wangfujing Avenue is one of Beijing's most famous and bustling shopping street, offering a "
+                      "unique blend of traditional and contemporary Chinese culture.")
+                print("(2) Beijing Olympic Park is home to iconic venues from the 2008 Summer Olympics, including the "
+                      "striking Bird's Nest Stadium and the Water Cube.")
+                player_third_destination = input("""Where do you want to go next?
+                Wangfujing Avenue (1) or Beijing Olympic Park (2). 
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # Wangfujing Avenue
+                    print("You stroll down Wangfujing Avenue and experience the excitement of Beijing's premier "
+                          "shopping street.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game. Game over.")
+
+                elif player_third_destination == "2":
+                    # Beijing Olympic Park
+                    print("Welcome to Beijing Olympic Park, you really enjoy the environment.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game. Game over.")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+
+            elif player_second_destination == "2":
+                # Beihai Park
+                print("You meet a group of travelers who invite you to join them to Summer Palace.")
+                print("Now, you have a choice to follow them to the Summer Palace or continue on to National Stadium.")
+                print("The National Stadium, popularly known as the 'Bird's Nest', is an architectural marvel, built "
+                      "for the 2008 Summer Olympics and recognized for its distinctive steel lattice design.")
+                player_third_destination = input("""Where do you want to go?
+                Summer Palace (1) or the National Stadium (2)
+                type 1 or 2: """)
+
+                if player_third_destination == "1":
+                    # Summer Palace
+                    print("You stroll though the Summer Palace, glimpse into the opulent lifestyle of China's imperial "
+                          "rulers.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game. Game over.")
+
+                elif player_third_destination == "2":
+                    # National Stadium
+                    print("You explore the iconic Bird's Nest Stadium, and admire its unique design.")
+                    print("You really enjoy the trip!")
+                    print("Thank you for playing the game. Game over.")
+
+                else:
+                    print("\nInvalid choice. Game over.")
+            else:
+                print("\nInvalid choice. Game over.")
+        else:
+            print("\nInvalid choice. Game over.")
+
+    # if the player choose the flight of Toronto-->Sydney
+    elif player_destination == "3":
+        print("You have arrived safely in Sydney, there are two places you can choose to go (Sydney Opera House or "
+              "Sydney Tower Eye.")
+        print("(1) The Sydney Opera house, one of the most recognizable landmarks in the world, known for its "
+              "distinctive sail-like design and its role as a premier venue for performing arts.")
+        print("(2) Sydney Tower Eye, the tallest structure in Sydney, offers unparalleled 360-degree views of the "
+              "city's skyline, harbour, and iconic landmarks from its observation deck.")
+        player_first_destination = input("""Where do you want to go first? 
+        Sydney Opera House (1) or Sydney Tower Eye (2). 
+        type 1 or 2: """)
+
+        if player_first_destination == "1":
+            # Sydney Opera House
+            print("You marvel at its stunning architecture, enjoy world-class performances.")
+            print("Next, you have a choice to go to Sydney Harbour Bridge or Queen Victoria Building.")
+            print("(1) The Sydney Harbour Bridge, stretches across Sydney Harbour, connecting the city's north and "
+                  "south shores, offering breathtaking views.")
+            print("(2) The Queen Victoria Building, is a grand 19th-century Romanesque-style shopping complex, "
+                  "renowned for its stunning stained glass window, intricate glass windows, intricate architecture.")
+            player_second_destination = input("""Where do you want to go first? 
+            Sydney Harbour Bridge (1) or Queen Victoria Building (2). 
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Sydney Harbour Bridge
+                print("You stroll across the Sydney Harbour Bridge, that would be an unforgettable adventure.")
+                print("You really enjoy the trip!")
+                print("Thank you for playing the game! Game over.")
+
+            elif player_second_destination == "2":
+                # Queen Victoria Building
+                print("You step into the Queen Victoria Building, where historic charm meets luxury shopping.")
+                print("You really enjoy the trip!")
+                print("Thank you for playing the game! Game over.")
+
+            else:
+                print("\nInvalid choice. Game over.")
+
+        elif player_first_destination == "2":
+            # Sydney Tower Eye
+            print("While you experience breathtaking panoramic views from the Sydney Tower Eye, you meet a girl, she "
+                  "invite you to Luna Park Sydney.")
+            print("Now, you can accept her invitation, or politely decline and head to Art Gallery of New South Wales.")
+            print("The Art Gallery of New South Wales, is one of Australia's leading art museums, housing an extensive "
+                  "collection of Australian, Indigenous, European, and Asian art.")
+            player_second_destination = input("""Where do you want to go first? 
+            Luna Park Sydney (1) or Art Gallery of New South Wales (2). 
+            type 1 or 2: """)
+
+            if player_second_destination == "1":
+                # Luna Park Sydney
+                print("You enjoy the joy with the girl you meet in the park, you become friend!")
+                print("You really enjoy the trip!")
+                print("Thank you for playing the game! Game over.")
+
+            elif player_second_destination == "2":
+                # Art Gallery of New South Wales
+                print("You explore diverse art exhibitions and cultural treasures in the art gallery!")
+                print("You really enjoy the trip!")
+                print("Thank you for playing the game! Game over. ")
+
+            else:
+                print("\nInvalid choice. Game over.")
+
+        else:
+            print("\nInvalid choice. Game over.")
+
+    else:
+        print("\nInvalid choice. Game over.")
+
+    play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+    if play_again != "yes":
+        print("Thank you for playing! Goodbye!")
