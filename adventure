@@ -2,8 +2,6 @@
 # Author: Qianrong Feng
 # Description: choose your adventure, choose a flight and enjoy your trip.
 
-play_again = "yes"
-
 while True:
     print("Here is a travel adventure. You have a chance that you can travel to New York, Beijing, or Sydney.")
     player_destination = input("""Where do you want to go? From Toronto to New York (1), Beijing (2) or Sydney (3)
@@ -361,3 +359,4 @@ while True:
     play_again = input("Do you want to play again? (yes/no): ").strip().lower()
     if play_again != "yes":
         print("Thank you for playing! Goodbye!")
+        break
